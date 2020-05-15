@@ -1,14 +1,16 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  purge: [
-    './resources/views/**/*.blade.php',
-    './resources/css/**/*.css',
-    './resources/js/**/*.js',
-  ],
-  theme: {
-    extend: {}
-  },
-  variants: {},
-  plugins: [
-    require('@tailwindcss/custom-forms')
-  ]
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+            },
+        },
+    },
+    variants: {},
+    plugins: [
+        require('@tailwindcss/custom-forms'),
+        require('@tailwindcss/ui'),
+    ],
 }
