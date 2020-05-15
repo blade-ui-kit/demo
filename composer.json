@@ -70,11 +70,11 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../blade-ui-kit/blade-ui-kit"
+            "url": "../blade-ui-kit"
         },
         {
             "type": "vcs",
-            "url": "../blade-ui-kit/blade-heroicons"
+            "url": "../blade-heroicons"
         }
     ]
 }

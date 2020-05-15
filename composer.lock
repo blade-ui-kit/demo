@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eeddee67051da45ae9f6b4ddd210e61f",
+    "content-hash": "8eb13c8a44ae53f6914821f4ce3de170",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -63,7 +63,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "../blade-ui-kit/blade-heroicons",
+                "url": "../blade-heroicons",
                 "reference": "c998b87cc293b29ac4e77b8b182e7d29be21079c"
             },
             "require": {
@@ -124,8 +124,8 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../blade-ui-kit/blade-ui-kit",
-                "reference": "11a555c33de948fda46491f7269cf12de76b0cbc"
+                "url": "../blade-ui-kit",
+                "reference": "0ad911d710b69fd58d2643807bc3123fb8734b82"
             },
             "require": {
                 "illuminate/support": "^7.0",
