@@ -1,22 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex items-center">
-        <div class="md:w-1/2 md:mx-auto">
-            <x-alert type="status"
-                class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100 px-3 py-4 mb-4"/>
-
-            <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
-                <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
+    <div class="bg-gray-50 py-10">
+        <header>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold leading-tight text-gray-900">
                     Dashboard
-                </div>
-
-                <div class="w-full p-6">
-                    <p class="text-gray-700">
-                        You are logged in!
-                    </p>
-                </div>
+                </h1>
             </div>
-        </div>
+        </header>
+        <main>
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <!-- Replace with your content -->
+                <div class="px-4 py-8 sm:px-0">
+                    <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+                </div>
+                <!-- /End replace -->
+            </div>
+        </main>
     </div>
 @endsection

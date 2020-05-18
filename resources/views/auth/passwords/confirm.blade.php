@@ -1,51 +1,34 @@
-@extends('layouts.app')
+@extends('layouts.auth', ['title' => __('Confirm Password')])
+
+@section('description')
+    {{ __('Please confirm your password before continuing.') }}
+@endsection
 
 @section('content')
-    <div class="container mx-auto">
-        <div class="flex flex-wrap justify-center">
-            <div class="w-full max-w-sm">
-                <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
+    <x-form :action="route('password.confirm')">
+        <div>
+            <x-label for="password" class="block text-sm font-medium leading-5 text-gray-700"/>
 
-                    <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
-                        {{ __('Confirm Password') }}
-                    </div>
-
-                    <form class="w-full p-6" method="POST" action="{{ route('password.confirm') }}">
-                        @csrf
-
-                        <p class="leading-normal">
-                            {{ __('Please confirm your password before continuing.') }}
-                        </p>
-
-                        <div class="flex flex-wrap my-6">
-                            <label for="password" class="block text-gray-700 text-sm font-bold mb-2">
-                                {{ __('Password') }}:
-                            </label>
-
-                            <input id="password" type="password" class="form-input w-full @error('password') border-red-500 @enderror" name="password" required autocomplete="new-password">
-
-                            @error('password')
-                                <p class="text-red-500 text-xs italic mt-4">
-                                    {{ $message }}
-                                </p>
-                            @enderror
-                        </div>
-
-                        <div class="flex flex-wrap items-center">
-                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-gray-100 font-bold  py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                                {{ __('Confirm Password') }}
-                            </button>
-
-                            @if (Route::has('password.request'))
-                                <a class="text-sm text-blue-500 hover:text-blue-700 whitespace-no-wrap no-underline ml-auto" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            @endif
-                        </div>
-                    </form>
-
-                </div>
+            <div class="mt-1 rounded-md shadow-sm">
+                @php($borderColor = $errors->getBag('default')->has('password') ? 'border-red-500' : 'border-gray-300')
+                <x-input-password required class="appearance-none block w-full px-3 py-2 border {{ $borderColor }} border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
             </div>
+
+            <x-error field="password" class="text-red-500 text-xs italic mt-4"/>
         </div>
-    </div>
+
+        <div class="mt-6">
+            <span class="block w-full rounded-md shadow-sm">
+                <x-submit class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                    {{ __('Confirm Password') }}
+                </x-submit>
+            </span>
+        </div>
+
+        <div class="text-sm leading-5 text-center mt-4">
+            <a href="{{ route('password.request') }}" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                Forgot your password?
+            </a>
+        </div>
+    </x-form>
 @endsection

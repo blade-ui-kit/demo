@@ -1,37 +1,19 @@
-@extends('layouts.app')
+@extends('layouts.auth', ['title' => __('Verify Your Email Address')])
+
+@section('description')
+    {{ __('Before proceeding, please check your email for a verification link.') }}
+    {{ __('If you did not receive the email, click the button below to request another one.') }}
+@endsection
 
 @section('content')
-    <div class="container mx-auto">
-        <div class="flex flex-wrap justify-center">
-            <div class="w-full max-w-sm">
-
-                @if (session('resent'))
-                    <div class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100  px-3 py-4 mb-4" role="alert">
-                        {{ __('A fresh verification link has been sent to your email address.') }}
-                    </div>
-                @endif
-
-                <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
-                    <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
-                        {{ __('Verify Your Email Address') }}
-                    </div>
-
-                    <div class="w-full flex flex-wrap p-6">
-                        <p class="leading-normal">
-                            {{ __('Before proceeding, please check your email for a verification link.') }}
-                        </p>
-
-                        <p class="leading-normal mt-6">
-                            {{ __('If you did not receive the email') }}, <a class="text-blue-500 hover:text-blue-700 no-underline" onclick="event.preventDefault(); document.getElementById('resend-verification-form').submit();">{{ __('click here to request another') }}</a>.
-                        </p>
-
-                        <form id="resend-verification-form" method="POST" action="{{ route('verification.resend') }}" class="hidden">
-                            @csrf
-                        </form>
-                    </div>
-
-                </div>
-            </div>
+    <x-form :action="route('verification.resend')">
+        <div class="mt-6">
+            <span class="block w-full rounded-md shadow-sm">
+                <x-submit class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                    {{ __('Request a new verification link') }}
+                </x-submit>
+            </span>
         </div>
-    </div>
+    </x-form>
 @endsection
+

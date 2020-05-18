@@ -41,7 +41,7 @@
 
                             @auth
                                 <a href="{{ route('home') }}" class="ml-8 font-medium text-indigo-600 hover:text-indigo-900 focus:outline-none focus:text-indigo-700 transition duration-150 ease-in-out">
-                                    {{ __('Home') }}
+                                    {{ __('Dashboard') }}
                                 </a>
                             @else
                                 <a href="{{ route('login') }}" class="ml-8 font-medium text-indigo-600 hover:text-indigo-900 focus:outline-none focus:text-indigo-700 transition duration-150 ease-in-out">
@@ -94,7 +94,7 @@
                             <div>
                                 @auth
                                     <a href="{{ route('home') }}" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">
-                                        {{ __('Home') }}
+                                        {{ __('Dashboard') }}
                                     </a>
                                 @else
                                     <a href="{{ route('login') }}" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out">
