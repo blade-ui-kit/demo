@@ -1,52 +1,48 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mx-auto">
-        <div class="flex flex-wrap justify-center">
-            <div class="w-full max-w-sm">
+    <div class="bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-md">
+            <x-heroicon-o-globe class="mx-auto h-12 w-auto text-indigo-600"/>
 
-                @if (session('status'))
-                    <div class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100 px-3 py-4 mb-4" role="alert">
-                        {{ session('status') }}
-                    </div>
-                @endif
+            <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
+                {{ __('Reset Password') }}
+            </h2>
+            <p class="mt-2 text-center text-sm leading-5 text-gray-600 max-w">
+                Or
+                <a href="{{ route('login') }}" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                    go back to login
+                </a>
+            </p>
 
-                <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
+            <x-alert type="status" class="rounded-md bg-yellow-50 text-sm leading-5 font-medium text-yellow-800 p-4 mt-8">
+                <x-heroicon-o-exclamation-circle class="h-5 w-5 inline-block mr-1"/>
+                {{ $component->flash() }}
+            </x-alert>
+        </div>
 
-                    <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
-                        {{ __('Reset Password') }}
-                    </div>
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+            <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+                <x-form :action="route('password.email')">
+                    <div>
+                        <x-label for="email" class="block text-sm font-medium leading-5 text-gray-700"/>
 
-                    <form class="w-full p-6" method="POST" action="{{ route('password.email') }}">
-                        @csrf
-
-                        <div class="flex flex-wrap mb-6">
-                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
-                                {{ __('E-Mail Address') }}:
-                            </label>
-
-                            <input id="email" type="email" class="form-input w-full @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                            @error('email')
-                                <p class="text-red-500 text-xs italic mt-4">
-                                    {{ $message }}
-                                </p>
-                            @enderror
+                        <div class="mt-1 rounded-md shadow-sm">
+                            @php($borderColor = $errors->getBag('default')->has('email') ? 'border-red-500' : 'border-gray-300')
+                            <x-input-email required class="appearance-none block w-full px-3 py-2 border {{ $borderColor }} border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
                         </div>
 
-                        <div class="flex flex-wrap">
-                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-gray-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                        <x-error field="email" class="text-red-500 text-xs italic mt-4"/>
+                    </div>
+
+                    <div class="mt-6">
+                        <span class="block w-full rounded-md shadow-sm">
+                            <x-submit class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
                                 {{ __('Send Password Reset Link') }}
-                            </button>
-
-                            <p class="w-full text-xs text-center text-gray-700 mt-8 -mb-4">
-                                <a class="text-blue-500 hover:text-blue-700 no-underline" href="{{ route('login') }}">
-                                    {{ __('Back to login') }}
-                                </a>
-                            </p>
-                        </div>
-                    </form>
-                </div>
+                            </x-submit>
+                        </span>
+                    </div>
+                </x-form>
             </div>
         </div>
     </div>

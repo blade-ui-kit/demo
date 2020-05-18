@@ -2,7 +2,7 @@
 
 @section('body')
     <div class="relative bg-white overflow-hidden">
-        <div class="max-w-screen-xl mx-auto ">
+        <div class="max-w-screen-xl mx-auto">
             <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
                 <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polygon points="50,0 100,0 50,100 0,100" />
@@ -71,9 +71,7 @@
                                 </div>
                                 <div class="-mr-2">
                                     <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
-                                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
+                                        <x-heroicon-o-x class="h-6 w-6"/>
                                     </button>
                                 </div>
                             </div>
@@ -136,7 +134,7 @@
             </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNDg5Mn0&auto=format&fit=crop&w=2850&q=80" alt="" />
+            <x-unsplash photo-id="ONpGBpns3cs" class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"/>
         </div>
     </div>
 
@@ -154,7 +152,11 @@
                 </p>
                 <div class="mt-8">
                     <div class="mt-1 relative rounded-md shadow-sm max-w-2xl mx-auto">
-                        <input name="search" id="search" class="form-input block w-full pr-10 sm:text-xl sm:leading-8" placeholder="Where to next?" />
+                        <x-input
+                            name="search"
+                            placeholder="Where to next?"
+                            class="form-input block w-full pr-10 sm:text-xl sm:leading-8"
+                        />
                         <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                             <x-heroicon-s-search class="h-5 w-5 text-gray-400" />
                         </div>
@@ -164,22 +166,19 @@
 
             <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
                 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                    <div class="flex-shrink-0">
-                        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1559564484-e48b3e040ff4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNDg5Mn0&auto=format&fit=crop&w=1679&q=80" alt="" />
+                    <div class="flex-shrink-0 relative">
+                        <x-unsplash photo-id="iFtuhgn7fYs" class="h-48 w-full object-cover"/>
+
+                        <x-button class="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-md text-gray-400 bg-gray-100 bg-opacity-50 hover:text-red-500 hover:bg-gray-100 hover:bg-opacity-100 focus:outline-none focus:bg-gray-100 focus:text-red-500 transition duration-150 ease-in-out">
+                            <x-heroicon-s-heart class="h-6 w-6"/>
+                        </x-button>
                     </div>
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div class="flex-1">
-                            <div class="grid grid-cols-2 gap-4 text-sm leading-5 font-medium text-indigo-600">
-                                <div>
-                                    <a href="#" class="hover:underline">
-                                        Europe
-                                    </a>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="hover:bg-red-500 rounded-full p-2 text-red-500 hover:text-white">
-                                        <x-heroicon-o-heart class="h-5 w-5 inline-block"/>
-                                    </a>
-                                </div>
+                            <div class="text-sm leading-5 font-medium text-indigo-600">
+                                <a href="#" class="hover:underline">
+                                    Europe
+                                </a>
                             </div>
                             <a href="#" class="block">
                                 <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
@@ -193,22 +192,19 @@
                     </div>
                 </div>
                 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                    <div class="flex-shrink-0">
-                        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1534430480872-3498386e7856?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNDg5Mn0&auto=format&fit=crop&w=1650&q=80" alt="" />
+                    <div class="flex-shrink-0 relative">
+                        <x-unsplash photo-id="wh-7GeXxItI" class="h-48 w-full object-cover"/>
+
+                        <x-button class="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-md text-gray-400 bg-gray-100 bg-opacity-50 hover:text-red-500 hover:bg-gray-100 hover:bg-opacity-100 focus:outline-none focus:bg-gray-100 focus:text-red-500 transition duration-150 ease-in-out">
+                            <x-heroicon-s-heart class="h-6 w-6"/>
+                        </x-button>
                     </div>
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div class="flex-1">
                             <div class="grid grid-cols-2 gap-4 text-sm leading-5 font-medium text-indigo-600">
-                                <div>
-                                    <a href="#" class="hover:underline">
-                                        North America
-                                    </a>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="hover:bg-red-500 rounded-full p-2 text-red-500 hover:text-white">
-                                        <x-heroicon-o-heart class="h-5 w-5 inline-block"/>
-                                    </a>
-                                </div>
+                                <a href="#" class="hover:underline">
+                                    North America
+                                </a>
                             </div>
                             <a href="#" class="block">
                                 <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
@@ -222,22 +218,19 @@
                     </div>
                 </div>
                 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                    <div class="flex-shrink-0">
-                        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNDg5Mn0&auto=format&fit=crop&w=1650&q=80" alt="" />
+                    <div class="flex-shrink-0 relative">
+                        <x-unsplash photo-id="t9Td0zfDTwI" class="h-48 w-full object-cover"/>
+
+                        <x-button class="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-md text-gray-400 bg-gray-100 bg-opacity-50 hover:text-red-500 hover:bg-gray-100 hover:bg-opacity-100 focus:outline-none focus:bg-gray-100 focus:text-red-500 transition duration-150 ease-in-out">
+                            <x-heroicon-s-heart class="h-6 w-6"/>
+                        </x-button>
                     </div>
                     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div class="flex-1">
                             <div class="grid grid-cols-2 gap-4 text-sm leading-5 font-medium text-indigo-600">
-                                <div>
-                                    <a href="#" class="hover:underline">
-                                        Europe
-                                    </a>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="hover:bg-red-500 rounded-full p-2 text-red-500 hover:text-white">
-                                        <x-heroicon-o-heart class="h-5 w-5 inline-block"/>
-                                    </a>
-                                </div>
+                                <a href="#" class="hover:underline">
+                                    Europe
+                                </a>
                             </div>
                             <a href="#" class="block">
                                 <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
