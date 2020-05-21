@@ -4,7 +4,7 @@
             <div class="flex">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('home') }}">
-                        <x-heroicon-o-globe class="h-8 w-auto text-indigo-600" />
+                        <x-heroicon-o-globe class="h-8 w-auto text-indigo-600"/>
                     </a>
                 </div>
 
@@ -13,13 +13,7 @@
                         Dashboard
                     </a>
                     <a href="#" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                        Team
-                    </a>
-                    <a href="#" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                        Projects
-                    </a>
-                    <a href="#" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                        Calendar
+                        Destinations
                     </a>
                 </div>
             </div>
@@ -41,21 +35,21 @@
                         From: "transform opacity-100 scale-100"
                         To: "transform opacity-0 scale-95"
                     -->
-                    <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
-                        <div class="py-1 rounded-md bg-white shadow-xs">
-                            <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
-                                Your Profile
-                            </a>
-                            <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
-                                Settings
-                            </a>
-                            <x-form :action="route('logout')">
-                                <x-submit class="block text-left w-full px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
-                                    Sign out
-                                </x-submit>
-                            </x-form>
-                        </div>
-                    </div>
+{{--                    <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">--}}
+{{--                        <div class="py-1 rounded-md bg-white shadow-xs">--}}
+{{--                            <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">--}}
+{{--                                Your Profile--}}
+{{--                            </a>--}}
+{{--                            <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">--}}
+{{--                                Settings--}}
+{{--                            </a>--}}
+{{--                            <x-form :action="route('logout')">--}}
+{{--                                <x-submit class="block text-left w-full px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">--}}
+{{--                                    Sign out--}}
+{{--                                </x-submit>--}}
+{{--                            </x-form>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </div>
             <div class="-mr-2 flex items-center sm:hidden">
@@ -82,9 +76,7 @@
     <div class="hidden sm:hidden">
         <div class="pt-2 pb-3">
             <a href="#" class="block pl-3 pr-4 py-2 border-l-4 border-indigo-500 text-base font-medium text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out">Dashboard</a>
-            <a href="#" class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">Team</a>
-            <a href="#" class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">Projects</a>
-            <a href="#" class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">Calendar</a>
+            <a href="#" class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">Destinations</a>
         </div>
         <div class="pt-4 pb-3 border-t border-gray-200">
             <div class="flex items-center px-4">

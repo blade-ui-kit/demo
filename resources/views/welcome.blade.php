@@ -13,7 +13,7 @@
                         <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                             <div class="flex items-center justify-between w-full md:w-auto">
                                 <a href="{{ route('welcome') }}" class="hover:zoom-1">
-                                    <x-heroicon-o-globe class="h-8 w-auto sm:h-10 text-indigo-600" />
+                                    <x-heroicon-o-globe class="h-8 w-auto sm:h-10 text-indigo-600"/>
                                 </a>
                                 <div class="-mr-2 flex items-center md:hidden">
                                     <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
@@ -67,7 +67,7 @@
                         <div class="rounded-lg bg-white shadow-xs overflow-hidden">
                             <div class="px-5 pt-4 flex items-center justify-between">
                                 <div>
-                                    <x-heroicon-o-globe class="h-8 w-auto sm:h-10 text-indigo-600" />
+                                    <x-heroicon-o-globe class="h-8 w-auto sm:h-10 text-indigo-600"/>
                                 </div>
                                 <div class="-mr-2">
                                     <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
@@ -158,7 +158,7 @@
                             class="form-input block w-full pr-10 sm:text-xl sm:leading-8"
                         />
                         <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                            <x-heroicon-s-search class="h-5 w-5 text-gray-400" />
+                            <x-heroicon-s-search class="h-5 w-5 text-gray-400"/>
                         </div>
                     </div>
                 </div>

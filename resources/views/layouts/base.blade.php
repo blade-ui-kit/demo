@@ -15,12 +15,16 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    @bladeUIStyles
 </head>
 <body class="bg-white h-screen antialiased leading-none">
 
 @yield('body')
 
 @include('layouts.footer')
+
+@bladeUIScripts
 
 </body>
 </html>
