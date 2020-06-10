@@ -40,7 +40,7 @@
 
                                         <div class="col-span-6 sm:col-span-3">
                                             <x-label for="birthday" class="block text-sm font-medium leading-5 text-gray-700"/>
-                                            <x-pikaday name="birthday" value="{{ $birthday }}" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                            <x-pikaday name="birthday" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
                                         </div>
                                     </div>
 
