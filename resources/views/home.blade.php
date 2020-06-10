@@ -3,12 +3,46 @@
 @section('content')
     <div class="bg-gray-50 py-10">
         <header>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
                 <h1 class="text-3xl font-bold leading-tight text-gray-900">
                     Dashboard
                 </h1>
             </div>
         </header>
+
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-bold leading-tight text-gray-900 mb-6">
+                Countdown to your next trip
+            </h2>
+
+            <x-countdown :expires="now()->addDays(1)" class="max-w-xl mx-auto grid grid-cols-4 gap-10 px-4 sm:px-6 text-xs leading-5 text-center">
+                <div>
+                    <span class="days text-lg md:text-3xl font-noway-medium" x-text="timer.days">
+                        {{ $component->days() }}
+                    </span><br>
+                    <span class="text-gray uppercase">Days</span>
+                </div>
+                <div>
+                    <span class="hours text-lg md:text-3xl font-noway-medium" x-text="timer.hours">
+                        {{ $component->hours() }}
+                    </span><br>
+                    <span class="text-gray uppercase">Hours</span>
+                </div>
+                <div>
+                    <span class="minutes text-lg md:text-3xl font-noway-medium" x-text="timer.minutes">
+                        {{ $component->minutes() }}
+                    </span><br>
+                    <span class="text-gray uppercase">Minutes</span>
+                </div>
+                <div>
+                    <span class="seconds text-lg md:text-3xl font-noway-medium" x-text="timer.seconds">
+                        {{ $component->seconds() }}
+                    </span><br>
+                    <span class="text-gray uppercase">Seconds</span>
+                </div>
+            </x-countdown>
+        </div>
+
         <main>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
                 <div class="sm:grid sm:grid-cols-2 sm:gap-10">
@@ -16,7 +50,6 @@
                         <h2 class="text-2xl font-bold leading-tight text-gray-900">
                             Your Destinations
                         </h2>
-
                         <div class="flex flex-col mt-6">
                             <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
                                 <div class="align-middle inline-block min-w-full shadow overflow-hidden rounded-lg border-b border-gray-200">
