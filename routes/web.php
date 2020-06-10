@@ -9,4 +9,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::view('/home', 'home')->name('home');
+    Route::get('/user/settings', 'User\\SettingsController@show')->name('user.settings');
+    Route::put('/user/settings', 'User\\SettingsController@update');
+});

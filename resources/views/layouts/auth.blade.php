@@ -17,7 +17,7 @@
 
             <x-alert type="status" class="rounded-md bg-yellow-50 text-sm leading-5 font-medium text-yellow-800 p-4 mt-8">
                 <x-heroicon-o-exclamation-circle class="h-5 w-5 inline-block mr-1"/>
-                {{ $component->flash() }}
+                {{ $component->message() }}
             </x-alert>
         </div>
 
