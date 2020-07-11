@@ -17,7 +17,7 @@ final class SettingsController
 
     public function update()
     {
-        session()->flash('status', 'User settings saved successfully.');
+        session()->flash('alert', 'User settings saved successfully.');
 
         return redirect()->route('settings');
     }
