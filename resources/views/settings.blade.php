@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="mt-5 md:mt-0 md:col-span-2">
-                        <x-form :action="route('user.settings')" method="PUT">
+                        <x-form :action="route('settings')" method="PUT">
                             <div class="shadow overflow-hidden sm:rounded-md">
                                 <div class="px-4 py-5 bg-white sm:p-6">
                                     <div class="grid grid-cols-6 gap-6">
@@ -47,7 +47,7 @@
                                     <div class="mt-6">
                                         <x-label for="about" class="block text-sm font-medium leading-5 text-gray-700 mb-2"/>
                                         <div class="rounded-md shadow-sm">
-                                            <x-simple-mde name="about" class="form-textarea mt-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
+                                            <x-easy-mde name="about" class="form-textarea mt-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
                                         </div>
                                         <p class="mt-4 text-sm text-gray-500">
                                             Brief description for your profile. Markdown can be used.

@@ -12,13 +12,13 @@ final class SettingsController
 
     public function show()
     {
-        return view('user.settings');
+        return view('settings');
     }
 
     public function update()
     {
         session()->flash('status', 'User settings saved successfully.');
 
-        return redirect()->route('user.settings');
+        return redirect()->route('settings');
     }
 }
