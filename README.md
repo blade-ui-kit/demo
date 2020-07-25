@@ -1,6 +1,6 @@
 # Blade UI Kit Example Project
 
-This is an example project which utilizes some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
+This is an example Laravel project which utilizes some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
 
 ## Requirements
 
