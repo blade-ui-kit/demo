@@ -1,5 +1,7 @@
 # Blade UI Kit Example Project
 
+This is an example project which utilizes some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
+
 ## Requirements
 
 The following tools are required in order to start the installation.
