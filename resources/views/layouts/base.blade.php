@@ -17,7 +17,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     @livewireStyles
-    @bladeUIStyles
+    @bukStyles
 </head>
 <body class="bg-white h-screen antialiased leading-none">
 
@@ -26,7 +26,7 @@
 @include('layouts.footer')
 
 @livewireScripts
-@bladeUIScripts
+@bukScripts
 
 </body>
 </html>
