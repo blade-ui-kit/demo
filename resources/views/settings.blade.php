@@ -25,22 +25,27 @@
                                     <div class="grid grid-cols-6 gap-6">
                                         <div class="col-span-6 sm:col-span-3">
                                             <x-label for="first_name" class="block text-sm font-medium leading-5 text-gray-700"/>
-                                            <input id="first_name" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                            <x-input name="first_name" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-3">
                                             <x-label for="last_name" class="block text-sm font-medium leading-5 text-gray-700"/>
-                                            <input id="last_name" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                            <x-input name="last_name" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-4">
                                             <x-label for="email_address" class="block text-sm font-medium leading-5 text-gray-700"/>
-                                            <input id="email_address" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                            <x-input name="email_address" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
                                         </div>
 
                                         <div class="col-span-6 sm:col-span-3">
                                             <x-label for="birthday" class="block text-sm font-medium leading-5 text-gray-700"/>
                                             <x-pikaday name="birthday" class="mt-1 form-input block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                                        </div>
+
+                                        <div class="col-span-6 sm:col-span-4">
+                                            <x-label for="profile_color" class="block text-sm font-medium leading-5 text-gray-700"/>
+                                            <x-color-picker name="profile_color" value="#FF0000" class="mt-1" />
                                         </div>
                                     </div>
 
