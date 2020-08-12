@@ -1,6 +1,6 @@
 <x-html class="bg-white h-screen antialiased leading-none">
     <x-slot name="head">
-        <x-og
+        <x-social-meta
             title="{{ $component->title() }}"
             description="Curate your bucket list and keep track of your next trips. Search for the most popular destinations on our planet."
         />
