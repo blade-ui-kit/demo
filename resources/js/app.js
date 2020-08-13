@@ -1,1 +1,3 @@
+import 'alpinejs';
+
 require('./bootstrap');

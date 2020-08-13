@@ -12,6 +12,7 @@
     },
     "devDependencies": {
         "@tailwindcss/ui": "^0.3.0",
+        "alpinejs": "^2.5.0",
         "axios": "^0.19",
         "cross-env": "^7.0",
         "laravel-mix": "^5.0.1",

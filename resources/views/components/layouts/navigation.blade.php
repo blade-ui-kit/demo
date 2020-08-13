@@ -1,4 +1,4 @@
-<nav class="bg-white shadow-sm">
+<nav class="bg-white shadow-sm" x-data="{ open: false }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
@@ -43,11 +43,11 @@
                 <!-- Mobile menu button -->
                 <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                     <!-- Menu open: "hidden", Menu closed: "block" -->
-                    <svg class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <svg :class="{ 'block': ! open, 'hidden': open }" class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" @click="open = true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     <!-- Menu open: "block", Menu closed: "hidden" -->
-                    <svg class="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <svg :class="{ 'block': open, 'hidden': ! open }" class="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" @click="open = false">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
@@ -55,12 +55,7 @@
         </div>
     </div>
 
-    <!--
-      Mobile menu, toggle classes based on menu state.
-
-      Open: "block", closed: "hidden"
-    -->
-    <div class="hidden sm:hidden">
+    <div class="sm:hidden" x-show="open" @click.away="open = false">
         <div class="pt-2 pb-3">
             <a href="{{ route('home') }}" class="block pl-3 pr-4 py-2 border-l-4 border-indigo-500 text-base font-medium text-indigo-700 bg-indigo-50 focus:outline-none focus:text-indigo-800 focus:bg-indigo-100 focus:border-indigo-700 transition duration-150 ease-in-out">Dashboard</a>
             <a href="#" class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out">Destinations</a>
