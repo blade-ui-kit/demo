@@ -5,7 +5,7 @@
                 Countdown to your next trip
             </h2>
 
-            <x-countdown :expires="now()->addDays(1)" class="max-w-xl mx-auto grid grid-cols-4 gap-10 px-4 sm:px-6 text-xs leading-5 text-center">
+            <x-countdown :expires="now()->addDays(1)" class="max-w-xl mx-auto grid grid-cols-4 gap-10 px-4 sm:px-6 text-xs text-gray-500 leading-5 text-center">
                 <div>
                     <span class="days text-lg md:text-3xl font-noway-medium" x-text="timer.days">
                         {{ $component->days() }}
