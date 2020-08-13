@@ -61,7 +61,9 @@
                                                     Germany
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Remove</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-trash class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-gray-50">
@@ -72,7 +74,9 @@
                                                     Spain
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Remove</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-trash class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-white">
@@ -83,7 +87,9 @@
                                                     Australia
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Remove</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-trash class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-gray-50">
@@ -94,7 +100,9 @@
                                                     United States
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Remove</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-trash class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-white">
@@ -105,7 +113,9 @@
                                                     France
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Remove</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-trash class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -132,7 +142,9 @@
                                                     United Kingdom
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Add</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-plus class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-gray-50">
@@ -143,7 +155,9 @@
                                                     United States
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Add</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-plus class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-white">
@@ -154,7 +168,9 @@
                                                     Japan
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Add</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-plus class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-gray-50">
@@ -165,7 +181,9 @@
                                                     United States
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Add</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-plus class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr class="bg-white">
@@ -176,7 +194,9 @@
                                                     Italy
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Add</a>
+                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                                                        <x-heroicon-o-plus class="inline h-5 w-5" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </tbody>
