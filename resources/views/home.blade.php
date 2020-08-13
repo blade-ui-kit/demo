@@ -1,5 +1,5 @@
 <x-layouts.app :title="__('Dashboard')">
-    <div class="bg-gray-50 py-10">
+    <div class="bg-gray-50 py-16">
         <div class="text-center mb-10">
             <h2 class="text-2xl font-bold leading-tight text-gray-900 mb-6">
                 Countdown to your next trip
