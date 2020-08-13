@@ -1,11 +1,9 @@
-@extends('layouts.auth', ['title' => __('Verify Your Email Address')])
+<x-layouts.auth :title="__('Verify Your Email Address')">
+    <x-slot name="description">
+        {{ __('Before proceeding, please check your email for a verification link.') }}
+        {{ __('If you did not receive the email, click the button below to request another one.') }}
+    </x-slot>
 
-@section('description')
-    {{ __('Before proceeding, please check your email for a verification link.') }}
-    {{ __('If you did not receive the email, click the button below to request another one.') }}
-@endsection
-
-@section('content')
     <x-form :action="route('verification.resend')">
         <div class="mt-6">
             <span class="block w-full rounded-md shadow-sm">
@@ -15,5 +13,5 @@
             </span>
         </div>
     </x-form>
-@endsection
+</x-layouts.auth>
 

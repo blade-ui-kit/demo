@@ -1,6 +1,4 @@
-@extends('layouts.auth', ['title' => __('Reset Password')])
-
-@section('content')
+<x-layouts.auth :title="__('Reset Password')">
     <x-form :action="route('password.update')">
         <input type="hidden" name="token" value="{{ $token }}">
 
@@ -42,4 +40,4 @@
             </span>
         </div>
     </x-form>
-@endsection
+</x-layouts.auth>

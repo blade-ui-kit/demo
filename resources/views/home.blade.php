@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-layouts.app :title="__('Dashboard')">
     <div class="bg-gray-50 py-10">
         <header>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
@@ -197,4 +195,4 @@
             </div>
         </main>
     </div>
-@endsection
+</x-layouts.app>

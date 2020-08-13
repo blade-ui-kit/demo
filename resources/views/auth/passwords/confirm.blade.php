@@ -1,10 +1,8 @@
-@extends('layouts.auth', ['title' => __('Confirm Password')])
+<x-layouts.auth :title="__('Confirm Password')">
+    <x-slot name="description">
+        {{ __('Please confirm your password before continuing.') }}
+    </x-slot>
 
-@section('description')
-    {{ __('Please confirm your password before continuing.') }}
-@endsection
-
-@section('content')
     <x-form :action="route('password.confirm')">
         <div>
             <x-label for="password" class="block text-sm font-medium leading-5 text-gray-700"/>
@@ -31,4 +29,4 @@
             </a>
         </div>
     </x-form>
-@endsection
+</x-layouts.auth>

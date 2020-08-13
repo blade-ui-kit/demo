@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-layouts.app :title="__('Settings')">
     <div class="bg-gray-50 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <x-alert class="rounded-md bg-green-100 text-sm leading-5 font-medium text-green-700 p-4 mt-8 mb-10">
@@ -71,4 +69,4 @@
             </div>
         </div>
     </div>
-@endsection
+</x-layouts.app>>

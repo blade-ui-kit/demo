@@ -1,4 +1,7 @@
-<x-html class="bg-white h-screen antialiased leading-none">
+<x-html
+    :title="isset($title) ? $title . ' | ' . config('app.name') : ''"
+    class="bg-white h-screen antialiased leading-none"
+>
     <x-slot name="head">
         <x-social-meta
             title="{{ $component->title() }}"
@@ -14,9 +17,9 @@
         @bukStyles
     </x-slot>
 
-    @yield('body')
+    {{ $slot }}
 
-    @include('layouts.footer')
+    <x-layouts.footer />
 
     @livewireScripts
     @bukScripts

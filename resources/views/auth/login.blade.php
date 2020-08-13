@@ -1,13 +1,11 @@
-@extends('layouts.auth', ['title' => 'Sign in to your account'])
+<x-layouts.auth :title="__('Sign in to your account')">
+    <x-slot name="description">
+        Or
+        <a href="{{ route('register') }}" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+            register a new account
+        </a>
+    </x-slot>
 
-@section('description')
-    Or
-    <a href="{{ route('register') }}" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
-        register a new account
-    </a>
-@endsection
-
-@section('content')
     <x-form :action="route('login')">
         <div>
             <x-label for="email" class="block text-sm font-medium leading-5 text-gray-700"/>
@@ -55,4 +53,4 @@
             </span>
         </div>
     </x-form>
-@endsection
+</x-layouts.auth>
