@@ -22,7 +22,7 @@
                 <x-dropdown class="ml-3 relative">
                     <x-slot name="trigger">
                         <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out" id="user-menu" aria-label="User menu" aria-haspopup="true">
-                            <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                            <x-avatar search="driesvints" provider="twitter" class="h-8 w-8 rounded-full" />
                         </button>
                     </x-slot>
 
@@ -63,7 +63,7 @@
         <div class="pt-4 pb-3 border-t border-gray-200">
             <div class="flex items-center px-4">
                 <div class="flex-shrink-0">
-                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                    <x-avatar search="driesvints" provider="twitter" class="h-10 w-10 rounded-full" />
                 </div>
                 <div class="ml-3">
                     <div class="text-base font-medium leading-6 text-gray-800">Tom Cook</div>
