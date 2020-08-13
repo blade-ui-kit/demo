@@ -214,10 +214,6 @@
                     </div>
                 </div>
 
-                <h2 class="text-2xl font-bold leading-tight text-gray-900 mt-6">
-                    Travel Map
-                </h2>
-
                 <x-mapbox theme="light-v10" class="rounded-lg shadow-lg h-96 mt-6" :markers="[[13.4105300, 52.5243700], [2.3488000, 48.8534100]]"/>
             </div>
         </main>
