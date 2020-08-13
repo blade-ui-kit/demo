@@ -1,13 +1,5 @@
 <x-layouts.app :title="__('Dashboard')">
     <div class="bg-gray-50 py-10">
-        <header>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
-                <h1 class="text-3xl font-bold leading-tight text-gray-900">
-                    Dashboard
-                </h1>
-            </div>
-        </header>
-
         <div class="text-center mb-10">
             <h2 class="text-2xl font-bold leading-tight text-gray-900 mb-6">
                 Countdown to your next trip
