@@ -5,7 +5,7 @@
                 Countdown to your next trip
             </h2>
 
-            <x-countdown :expires="now()->addDays(1)" class="max-w-xl mx-auto grid grid-cols-4 gap-10 px-4 sm:px-6 text-xs text-gray-500 leading-5 text-center">
+            <x-countdown :expires="new Carbon\Carbon('2021-05-21')" class="max-w-xl mx-auto grid grid-cols-4 gap-10 px-4 sm:px-6 text-xs text-gray-500 leading-5 text-center">
                 <div>
                     <span class="days text-lg md:text-3xl font-noway-medium" x-text="timer.days">
                         {{ $component->days() }}
@@ -52,6 +52,9 @@
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                                                     Germany
                                                 </td>
+                                                <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                                    <x-date-time :date="new Carbon\Carbon('2021-05-21')" human />
+                                                </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
                                                         <x-heroicon-o-trash class="inline h-5 w-5" />
@@ -64,6 +67,9 @@
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                                                     Spain
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                                    <x-date-time :date="new Carbon\Carbon('2021-06-14')" human />
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -78,6 +84,9 @@
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                                                     Australia
                                                 </td>
+                                                <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                                    <x-date-time :date="new Carbon\Carbon('2021-07-22')" human />
+                                                </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
                                                         <x-heroicon-o-trash class="inline h-5 w-5" />
@@ -91,6 +100,9 @@
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                                                     United States
                                                 </td>
+                                                <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                                    <x-date-time :date="new Carbon\Carbon('2021-09-10')" human />
+                                                </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
                                                         <x-heroicon-o-trash class="inline h-5 w-5" />
@@ -103,6 +115,9 @@
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                                                     France
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                                                    <x-date-time :date="new Carbon\Carbon('2021-10-25')" human />
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
