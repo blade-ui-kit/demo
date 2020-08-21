@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://github.com/blade-ui-kit/art/blob/main/socialcard-blade-example.png" width="1280" title="Social Card Blade UI Kit Example Project">
+</p>
+
 # Blade UI Kit Example Project
 
 This is an example Laravel project which demonstrate the usage for some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
