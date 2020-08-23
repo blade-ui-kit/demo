@@ -53,7 +53,7 @@
                                                     Germany
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                    <x-carbon :date="new Carbon\Carbon('2021-05-21')" human />
+                                                    <x-date-time :date="new Carbon\Carbon('2021-05-21')" human />
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -69,7 +69,7 @@
                                                     Spain
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                    <x-carbon :date="new Carbon\Carbon('2021-06-14')" human />
+                                                    <x-date-time :date="new Carbon\Carbon('2021-06-14')" human />
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -85,7 +85,7 @@
                                                     Australia
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                    <x-carbon :date="new Carbon\Carbon('2021-07-22')" human />
+                                                    <x-date-time :date="new Carbon\Carbon('2021-07-22')" human />
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -101,7 +101,7 @@
                                                     United States
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                    <x-carbon :date="new Carbon\Carbon('2021-09-10')" human />
+                                                    <x-date-time :date="new Carbon\Carbon('2021-09-10')" human />
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -117,7 +117,7 @@
                                                     France
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                    <x-carbon :date="new Carbon\Carbon('2021-10-25')" human />
+                                                    <x-date-time :date="new Carbon\Carbon('2021-10-25')" human />
                                                 </td>
                                                 <td class="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
                                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">
