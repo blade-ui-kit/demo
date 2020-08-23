@@ -7,7 +7,7 @@
 
             <div class="mt-1 rounded-md shadow-sm">
                 @php($borderColor = $errors->getBag('default')->has('email') ? 'border-red-500' : 'border-gray-300')
-                <x-input-email required class="appearance-none block w-full px-3 py-2 border {{ $borderColor }} border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
+                <x-email required class="appearance-none block w-full px-3 py-2 border {{ $borderColor }} border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
             </div>
 
             <x-error field="email" class="text-red-500 text-xs italic mt-4"/>
@@ -18,7 +18,7 @@
 
             <div class="mt-1 rounded-md shadow-sm">
                 @php($borderColor = $errors->getBag('default')->has('password') ? 'border-red-500' : 'border-gray-300')
-                <x-input-password required class="appearance-none block w-full px-3 py-2 border {{ $borderColor }} rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
+                <x-password required class="appearance-none block w-full px-3 py-2 border {{ $borderColor }} rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
             </div>
 
             <x-error field="password" class="text-red-500 text-xs italic mt-4"/>
@@ -28,7 +28,7 @@
             <x-label for="password_confirmation" class="block text-sm font-medium leading-5 text-gray-700"/>
 
             <div class="mt-1 rounded-md shadow-sm">
-                <x-input-password name="password_confirmation" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
+                <x-password name="password_confirmation" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
             </div>
         </div>
 
