@@ -8,7 +8,9 @@ This is an example Laravel project which demonstrate the usage for some of the c
 
 It's built using components from [Tailwind UI](https://tailwindui.com) by [Adam Wathan](https://twitter.com/adamwathan) & [Steve Schoger](https://twitter.com/steveschoger).
 
-<img src="https://github.com/blade-ui-kit/blade-ui-kit-example/blob/main/preview.jpg" width="1000"/>
+<p align="center">
+    <img src="https://github.com/blade-ui-kit/blade-ui-kit-example/blob/main/preview.jpg" width="600" title="Social Card Blade UI Kit Example Project"/>
+</p>
 
 ## Requirements
 
