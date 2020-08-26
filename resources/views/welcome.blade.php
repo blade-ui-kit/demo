@@ -125,7 +125,7 @@
             </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <x-unsplash photo-id="ONpGBpns3cs" class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"/>
+            <x-unsplash photo="ONpGBpns3cs" class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"/>
         </div>
     </div>
 
@@ -158,7 +158,7 @@
             <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
                 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div class="flex-shrink-0 relative">
-                        <x-unsplash photo-id="iFtuhgn7fYs" class="h-48 w-full object-cover"/>
+                        <x-unsplash photo="iFtuhgn7fYs" class="h-48 w-full object-cover"/>
 
                         <button class="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-md text-gray-400 bg-gray-100 bg-opacity-50 hover:text-red-500 hover:bg-gray-100 hover:bg-opacity-100 focus:outline-none focus:bg-gray-100 focus:text-red-500 transition duration-150 ease-in-out">
                             <x-heroicon-s-heart class="h-6 w-6"/>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div class="flex-shrink-0 relative">
-                        <x-unsplash photo-id="wh-7GeXxItI" class="h-48 w-full object-cover"/>
+                        <x-unsplash photo="wh-7GeXxItI" class="h-48 w-full object-cover"/>
 
                         <button class="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-md text-gray-400 bg-gray-100 bg-opacity-50 hover:text-red-500 hover:bg-gray-100 hover:bg-opacity-100 focus:outline-none focus:bg-gray-100 focus:text-red-500 transition duration-150 ease-in-out">
                             <x-heroicon-s-heart class="h-6 w-6"/>
@@ -210,7 +210,7 @@
                 </div>
                 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div class="flex-shrink-0 relative">
-                        <x-unsplash photo-id="t9Td0zfDTwI" class="h-48 w-full object-cover"/>
+                        <x-unsplash photo="t9Td0zfDTwI" class="h-48 w-full object-cover"/>
 
                         <button class="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-md text-gray-400 bg-gray-100 bg-opacity-50 hover:text-red-500 hover:bg-gray-100 hover:bg-opacity-100 focus:outline-none focus:bg-gray-100 focus:text-red-500 transition duration-150 ease-in-out">
                             <x-heroicon-s-heart class="h-6 w-6"/>
