@@ -9,8 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.4",
-        "blade-ui-kit/blade-heroicons": "dev-main",
-        "blade-ui-kit/blade-ui-kit": "dev-main",
+        "blade-ui-kit/blade-heroicons": "^0.2.1",
+        "blade-ui-kit/blade-ui-kit": "^0.1.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
@@ -67,15 +67,5 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../blade-ui-kit"
-        },
-        {
-            "type": "vcs",
-            "url": "../blade-heroicons"
-        }
-    ]
+    }
 }

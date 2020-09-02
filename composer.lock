@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f4e30cf2d2385334df14165323f500e",
+    "content-hash": "1a87344cf06d1ae50c0ef58c0e9dc7c9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -60,11 +60,17 @@
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
-            "version": "dev-main",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
-                "url": "../blade-heroicons",
+                "url": "https://github.com/blade-ui-kit/blade-heroicons.git",
                 "reference": "b01a5c98479c895d903e57659c089a28146887b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-heroicons/zipball/b01a5c98479c895d903e57659c089a28146887b1",
+                "reference": "b01a5c98479c895d903e57659c089a28146887b1",
+                "shasum": ""
             },
             "require": {
                 "blade-ui-kit/blade-icons": "^0.4.0",
@@ -89,16 +95,7 @@
                     "BladeUI\\Heroicons\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "format": [
-                    "vendor/bin/php-cs-fixer fix"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -113,9 +110,15 @@
             "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
             "homepage": "https://github.com/blade-ui-kit/blade-heroicons",
             "keywords": [
-                "Blade",
                 "Heroicons",
-                "Laravel"
+                "blade",
+                "laravel"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
             ],
             "time": "2020-08-11T07:48:49+00:00"
         },
@@ -196,16 +199,24 @@
         },
         {
             "name": "blade-ui-kit/blade-ui-kit",
-            "version": "dev-main",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blade-ui-kit/blade-ui-kit.git",
+                "reference": "75666fb2beadd8b494414bc3186daf0cb2e65d09"
+            },
             "dist": {
-                "type": "path",
-                "url": "../blade-ui-kit",
-                "reference": "0a1daa65acda82b408d516859bf744244724f82d"
+                "type": "zip",
+                "url": "https://api.github.com/repos/blade-ui-kit/blade-ui-kit/zipball/75666fb2beadd8b494414bc3186daf0cb2e65d09",
+                "reference": "75666fb2beadd8b494414bc3186daf0cb2e65d09",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "illuminate/support": "^7.25.0",
-                "illuminate/view": "^7.25.0",
+                "illuminate/filesystem": "^7.0",
+                "illuminate/support": "^7.0",
+                "illuminate/view": "^7.0",
+                "nesbot/carbon": "^2.38",
                 "php": "^7.3"
             },
             "require-dev": {
@@ -215,7 +226,6 @@
                 "league/commonmark": "^1.4",
                 "livewire/livewire": "^1.2",
                 "lorisleiva/cron-translator": "^0.1.1",
-                "nesbot/carbon": "^2.35",
                 "orchestra/testbench": "^5.0",
                 "phpunit/phpunit": "^9.0"
             },
@@ -236,16 +246,7 @@
                     "BladeUIKit\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "format": [
-                    "vendor/bin/php-cs-fixer fix"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -260,17 +261,17 @@
             "description": "A set of renderless components to utilise in your Laravel Blade views.",
             "homepage": "https://github.com/blade-ui-kit/blade-ui-kit",
             "keywords": [
-                "Blade",
-                "Laravel",
-                "UI"
+                "blade",
+                "laravel",
+                "ui"
             ],
-            "support": {
-                "issues": "https://github.com/blade-ui-kit/blade-ui-kit/issues",
-                "source": "https://github.com/blade-ui-kit/blade-ui-kit"
-            },
-            "transport-options": {
-                "relative": true
-            }
+            "funding": [
+                {
+                    "url": "https://github.com/driesvints",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-02T15:35:38+00:00"
         },
         {
             "name": "brick/math",
@@ -6351,6 +6352,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -7432,10 +7434,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "blade-ui-kit/blade-heroicons": 20,
-        "blade-ui-kit/blade-ui-kit": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
