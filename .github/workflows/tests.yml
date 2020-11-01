@@ -1,4 +1,4 @@
-name: tests
+name: Tests
 
 on:
   push:
@@ -16,7 +16,6 @@ jobs:
         with:
           php-version: 7.4
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite
-          tools: composer:v2
           coverage: none
 
       - name: Install Composer dependencies
