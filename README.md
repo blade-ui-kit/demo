@@ -4,6 +4,13 @@
 
 # Blade UI Kit Example Project
 
+<a href="https://github.com/blade-ui-kit/blade-ui-kit-example/actions?query=workflow%3ATests">
+    <img src="https://github.com/blade-ui-kit/blade-ui-kit-example/workflows/Tests/badge.svg" alt="Tests">
+</a>
+<a href="https://github.styleci.io/repos/264205503">
+    <img src="https://github.styleci.io/repos/264205503/shield?style=flat" alt="Code Style">
+</a>
+
 This is an example Laravel project which demonstrate the usage for some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
 
 It's built using components from [Tailwind UI](https://tailwindui.com) by [Adam Wathan](https://twitter.com/adamwathan) & [Steve Schoger](https://twitter.com/steveschoger).
