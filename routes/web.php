@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -9,6 +10,6 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
     Route::view('/home', 'home')->name('home');
-    Route::get('/settings', 'SettingsController@show')->name('settings');
-    Route::put('/settings', 'SettingsController@update');
+    Route::get('/settings', [SettingsController::class, 'show'])->name('settings');
+    Route::put('/settings', [SettingsController::class, 'update']);
 });
