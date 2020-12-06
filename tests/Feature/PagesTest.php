@@ -27,7 +27,7 @@ class PagesTest extends TestCase
     /** @test */
     public function users_can_visit_their_dashboard()
     {
-        $this->be(factory(User::class)->create());
+        $this->be(User::factory()->create());
 
         $this->get('/home')
             ->assertStatus(200);
@@ -36,7 +36,7 @@ class PagesTest extends TestCase
     /** @test */
     public function users_can_visit_their_settings()
     {
-        $this->be(factory(User::class)->create());
+        $this->be(User::factory()->create());
 
         $this->get('/settings')
             ->assertStatus(200);
