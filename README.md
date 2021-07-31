@@ -1,17 +1,17 @@
 <p align="center">
-    <img src="https://github.com/blade-ui-kit/art/blob/main/socialcard-blade-example.png" width="1280" title="Social Card Blade UI Kit Example Project"/>
+    <img src="https://github.com/blade-ui-kit/art/blob/main/socialcard-blade-example.png" width="1280" title="Social Card Blade UI Kit Demo Project"/>
 </p>
 
-# Blade UI Kit Example Project
+# Blade UI Kit Demo Project
 
-<a href="https://github.com/blade-ui-kit/blade-ui-kit-example/actions?query=workflow%3ATests">
-    <img src="https://github.com/blade-ui-kit/blade-ui-kit-example/workflows/Tests/badge.svg" alt="Tests">
+<a href="https://github.com/blade-ui-kit/demo/actions?query=workflow%3ATests">
+    <img src="https://github.com/blade-ui-kit/demo/workflows/Tests/badge.svg" alt="Tests">
 </a>
 <a href="https://github.styleci.io/repos/264205503">
     <img src="https://github.styleci.io/repos/264205503/shield?style=flat" alt="Code Style">
 </a>
 
-This is an example Laravel project which demonstrate the usage for some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
+This is a demo Laravel project which demonstrate the usage for some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
 
 It's built using components from [Tailwind UI](https://tailwindui.com) by [Adam Wathan](https://twitter.com/adamwathan) & [Steve Schoger](https://twitter.com/steveschoger).
 
@@ -27,7 +27,7 @@ The following tools are required in order to start the installation.
 
 ## Installation
 
-1. Clone this repository locally with `git clone git@github.com:blade-ui-kit/blade-ui-kit-example.git blade-ui-kit-example`
+1. Clone this repository locally with `git clone git@github.com:blade-ui-kit/demo.git blade-ui-kit-demo`
 2. Setup a local database called `laravel`
 3. Copy the `.env.example` file to `.env` and fill in the database credentials
 4. Install the PHP dependencies with `composer install`
