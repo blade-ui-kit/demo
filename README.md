@@ -34,7 +34,8 @@ The following tools are required in order to start the installation.
 5. Generate a new app key with `php artisan key:generate`
 6. Prepare the database by running `php artisan migrate --seed`
 7. Install and compile the front-end dependencies with `npm install && npm run dev`
-8. Serve the website locally by running `php artisan serve`
+8. Set a valid `UNSPLASH_ACCESS_KEY` and `MAPBOX_PUBLIC_TOKEN` value in your `.env` file
+9. Serve the website locally by running `php artisan serve`
 
 You can now visit the app in your browser by visiting [http://127.0.0.1:8000](http://127.0.0.1:8000). You can login in with **`john@example.com`** & **`password`**.
 
