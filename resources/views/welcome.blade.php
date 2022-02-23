@@ -184,7 +184,7 @@
                 </div>
                 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div class="flex-shrink-0 relative">
-                        <x-unsplash photo="wh-7GeXxItI" class="h-48 w-full object-cover"/>
+                        <x-unsplash photo="SVVTZtTGyaU" class="h-48 w-full object-cover"/>
 
                         <button class="absolute top-0 right-0 mt-2 mr-2 p-2 rounded-md text-gray-400 bg-gray-100 bg-opacity-50 hover:text-red-500 hover:bg-gray-100 hover:bg-opacity-100 focus:outline-none focus:bg-gray-100 focus:text-red-500 transition duration-150 ease-in-out">
                             <x-heroicon-s-heart class="h-6 w-6"/>
