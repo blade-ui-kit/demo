@@ -7,9 +7,6 @@
 <a href="https://github.com/blade-ui-kit/demo/actions?query=workflow%3ATests">
     <img src="https://github.com/blade-ui-kit/demo/workflows/Tests/badge.svg" alt="Tests">
 </a>
-<a href="https://github.styleci.io/repos/264205503">
-    <img src="https://github.styleci.io/repos/264205503/shield?style=flat" alt="Code Style">
-</a>
 
 This is a demo Laravel project which demonstrate the usage for some of the components from [Blade UI Kit](https://github.com/blade-ui-kit/blade-ui-kit).
 
