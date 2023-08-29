@@ -25,8 +25,8 @@ The following tools are required in order to start the installation.
 ## Installation
 
 1. Clone this repository locally with `git clone git@github.com:blade-ui-kit/demo.git blade-ui-kit-demo`
-2. Setup a local database called `laravel`
-3. Copy the `.env.example` file to `.env` and fill in the database credentials
+2. Create `database/database.sqlite` file to local database
+3. Copy the `.env.example` file to `.env`
 4. Install the PHP dependencies with `composer install`
 5. Generate a new app key with `php artisan key:generate`
 6. Prepare the database by running `php artisan migrate --seed`
