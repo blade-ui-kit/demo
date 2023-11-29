@@ -12,7 +12,7 @@
     "devDependencies": {
         "@tailwindcss/ui": "^0.3.0",
         "alpinejs": "^2.5.0",
-        "axios": "^0.25",
+        "axios": "^1.6",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.21",
         "prettier": "^2.0.5",
